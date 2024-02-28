@@ -1,0 +1,685 @@
+header {
+  background-color: #46a0c3;
+
+}
+
+#cuerpo {
+
+  background-color: lightblue;
+  height: 100%;
+
+}
+
+
+
+.index_main {
+
+  float: right;
+  width: 86%;
+}
+
+.registro_main {
+  float: right;
+  width: 86%;
+}
+
+/*tema de hamburguesa*/
+/*
+.hamb{visibility: none;}
+.menu{visibility: none;}*/
+.hamb {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .hamb {
+    visibility: visible;
+  }
+
+  .menu {
+    visibility: visible;
+  }
+
+  #nav2 {
+    display: none;
+  }
+
+  .hamb:checked~#nav2 {
+    display: none;
+  }
+
+  .hamb {
+    display: none;
+  }
+
+  .menu {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  .menu:hover {
+    background: grey;
+  }
+
+  /* Estilo del boton cuando el menú está expandido*/
+  .hamb:checked~.menu {
+    background: lightgrey;
+  }
+
+  #nav2 {
+    padding: 0;
+    width: 200px;
+
+  }
+
+
+  .men {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
+
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+  .men:hover {
+    filter: brightness(110%);
+  }
+}
+
+/*tema del picture*/
+@media only screen and (max-width: 600px) {
+
+
+  picture {
+    visibility: hidden;
+  }
+
+}
+
+/*responsive inventado*/
+
+@media only screen and (max-width: 600px) {
+
+
+  .buscador {
+    visibility: hidden;
+  }
+
+
+  .masleidas {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  .noticias {
+    visibility: hidden;
+  }
+
+}
+
+/*Aqui empieza el tema del menu*/
+#imagenprincipal {
+  width: 6%;
+  height: 6%;
+}
+
+.buscador {
+  margin-top: -70px;
+  margin-right: 20px;
+  float: right;
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.buscador input#search {
+  width: 300px;
+  height: 40px;
+  background: white;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.buscador .icon {
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+
+#nav2 {
+  display: inline;
+
+}
+
+#nav2 .men a {
+  width: 100%;
+  border-style: solid;
+  border-color: darkkhaki;
+  background-color: #46a0c3;
+  color: #000;
+  text-decoration: none;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+#nav2 a:hover {
+
+
+  background-color: #303030;
+  color: white;
+}
+
+#contenedor {
+  border-style: solid;
+  background-color: khaki;
+  float: left;
+
+}
+
+
+
+
+.social {
+  margin: 30px;
+
+  border-radius: 10px;
+  color: #000;
+  border-style: ridge;
+  border-color: chartreuse;
+  border-width: 2px;
+  background-color: #46a0c3;
+  text-decoration: none;
+  width: 50px;
+
+
+
+
+}
+
+.name_pie {
+  margin: 80px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: xx-large;
+
+
+}
+
+
+.url_externa {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  color: #000;
+  border-style: ridge;
+  border-color: chartreuse;
+  border-width: 2px;
+  border-radius: 60px;
+  background-color: #46a0c3;
+  text-decoration: none;
+
+
+}
+
+.url_externa:hover {
+
+
+  background-color: #303030;
+  color: white;
+}
+
+.social:hover {
+  background-color: #303030;
+  color: white;
+}
+
+
+
+#inicio {
+  font-size: larger;
+
+
+}
+
+
+#info {
+  background-color: burlywood;
+  text-align: center;
+}
+
+#info h2 {
+
+  background-color: khaki;
+
+}
+
+
+#ubicaciones {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+#videos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+}
+
+
+
+
+
+/*Aqui ira todo lo relacionado con la pagina de productos*/
+
+.flash {
+  font-weight: bolder;
+  font-size: 15px;
+  color: white;
+  margin-left: -50px;
+  margin-top: -30px;
+  background-image: url(flash.png);
+  background-repeat: no-repeat;
+
+  background-position: 37px -10px;
+  padding: 40px 60px;
+
+}
+
+.notic {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  text-align: center;
+  border-radius: 20px;
+  width: 85%;
+}
+
+
+
+
+
+.nombre {
+  background-color: rgb(223, 244, 137);
+  font-size: medium;
+  color: #000;
+  font-weight: bold;
+  background-size: 10px;
+  width: 100%;
+  border-style: hidden;
+  border-color: #000;
+}
+
+.cubos {
+  font-size: larger;
+  background-color: lightsalmon;
+  border-style: solid;
+  border-color: rgb(241, 95, 21);
+  border-radius: 20px;
+}
+
+
+.categoria {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(135, 250, 192);
+  text-align: left;
+  border-style: ridge;
+  border-color: rgb(56, 7, 169);
+  border-radius: 20px;
+  border-width: 2px;
+
+
+}
+
+.prod {
+  display: flex;
+  flex-direction: column;
+
+  border-style: solid;
+  border-color: black;
+  padding: 20px;
+  height: 50%;
+  width: 100%;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgb(164, 148, 244);
+
+}
+
+.img_prodc {
+  width: 100%;
+  height: 50%;
+}
+
+.descripcion {
+  padding: 5px;
+  margin: 10px;
+  text-align: justify;
+  font-size: medium;
+  border-style: solid;
+  border-color: rgb(218, 246, 57);
+  border-radius: 10px;
+
+}
+
+.caracteristicas {
+  list-style-type: decimal;
+  text-align: left;
+  border-style: solid;
+  border-color: rgb(57, 246, 85);
+  background-color: rgb(57, 246, 85);
+  border-radius: 5px;
+
+
+}
+
+.precio {
+  font-size: large;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: line-through;
+  color:
+    #303030;
+}
+
+.precio_bueno {
+  font-size: large;
+  font-size: 30px;
+  font-weight: bold;
+  color: #303030;
+}
+
+.nuevo_precio {
+  width: 100%;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+  background-size: 180px 130px;
+  background-image: url(oferta.png);
+  background-repeat: no-repeat;
+  background-position: -5px -12px;
+  padding: 30px 30px;
+
+}
+
+
+.compra {
+
+  text-decoration: none;
+  color: black;
+  width: 70%;
+  background-color: khaki;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+}
+
+
+
+
+
+
+/*  Calificacion de estrellas*/
+
+input[name="estrellas"] {
+  display: none;
+
+
+}
+
+.estrella {
+  list-style: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: grey;
+}
+
+.clasificacion {
+
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.estrella:hover,
+.estrella:hover~label {
+  color: orange;
+}
+
+input[name="estrellas"]:checked~label {
+  color: orange;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+/*A partir de aqui vamos a meter todo lo que tenga que ver con media*/
+
+.secciones {
+  width: 70%;
+  background-color: rgb(164, 148, 244);
+  border-style: ridge;
+  border-radius: 10px;
+  border-color: rgb(128, 0, 163);
+  
+
+}
+
+
+.articulo {
+  padding: 20px;
+  margin: 20px;
+  width: 85%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  background-color: rgb(135, 250, 192);
+
+}
+
+.productos_media {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(245, 253, 127);
+
+
+}
+
+.section {
+
+  padding: 20px;
+  margin: 20px;
+  width: 90%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  background-color: rgb(135, 250, 192);
+}
+
+.leidassecciones {
+  padding: 20px;
+  margin: 2%;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  background-color: rgb(135, 250, 192);
+}
+
+
+
+
+.not {
+
+  width: 100%;
+}
+
+.noticias {
+  float: left;
+
+
+}
+
+
+
+
+.ubicacion {
+  display: block;
+  text-decoration: none;
+  text-align: justify;
+  font-size: medium;
+}
+
+.subtitulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+
+  font-size: medium;
+
+}
+
+.campeonatos {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  background-color: rgb(245, 253, 127);
+  color: #000;
+  text-decoration: none;
+  font-size: medium;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+
+}
+
+
+.leido {
+  margin: 25px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(164, 148, 244);
+  border-style: ridge;
+  border-radius: 10px;
+  border-color: rgb(128, 0, 163);
+
+}
+
+
+
+
+.masleidas {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 60%;
+  margin: 10%;
+  text-align: center;
+  border-radius: 20px;
+  width: 40%;
+  background-color: rgb(245, 253, 127);
+
+
+}
+
+
+
+/*Tema del footer*/
+#pie_pagina {
+  border-style: solid;
+  border-radius: 120px;
+  border-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+.footer {
+  border-radius: 120px;
+
+  background: rgb(12, 4, 163);
+
+}
+
+.footer h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  padding: 40px 0 0px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer h4 {
+  color: white;
+  font-weight: lighter;
+}
+
+.footer ul {
+  align-items: center;
+  font-size: 13px;
+  color: #7F8C8D;
+}
+
+
+.footer ul li a {
+  padding: 0 0 12px 0;
+  display: block;
+}
